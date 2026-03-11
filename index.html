@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>TodoLister</title>
+
+<link rel="stylesheet" href="styles/index.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<label for="menu-toggle" class="hamburger">
+<i class="fa fa-bars"></i>
+</label>
+
+<h1>TodoLister</h1>
+
+<div class="stats">
+<span class="js-total">0</span> Tasks
+</div>
+
+</header>
+
+<input type="checkbox" id="menu-toggle">
+
+<div class="sidebar">
+
+<button class="active" data-filter="all">All Tasks</button>
+<button data-filter="completed">Completed</button>
+<button data-filter="pending">Pending</button>
+
+</div>
+
+<main>
+
+<div class="task-container">
+
+<h2>Create Task</h2>
+
+<div class="add-task">
+
+<input type="text"
+placeholder="Task name"
+class="js-name-input">
+
+<input type="date"
+class="js-date-input">
+
+<select class="js-priority">
+
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+
+</select>
+
+<input type="text"
+placeholder="Category"
+class="js-category">
+
+<button class="js-add-btn">
+Add
+</button>
+
+</div>
+
+<div class="search-box">
+
+<i class="fa fa-search"></i>
+
+<input type="search"
+placeholder="Search tasks"
+class="js-search">
+
+</div>
+
+<ol class="task-list js-task-list"></ol>
+
+</div>
+
+</main>
+
+<div class="message-holder js-message"></div>
+
+<script type="module"
+src="scripts/main.js"></script>
+
+</body>
+</html>
