@@ -219,3 +219,9 @@ transition:0.3s;
 .message-holder-show{
 bottom:0;
 }
+
+@media (max-width: 500px) {
+  .sidebar {
+    left: -500px;
+  }
+}
